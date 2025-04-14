@@ -4,35 +4,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/OurBlog.css">
+    <script src="../js/script.js"></script>
     <title>Plastic Forge</title>
 </head>
 
 <body>
     <header>
         <nav class="navigation">
-            <div class="on_page">
-                <a class="on_page_a" href="../index.html">Главная страница</a>
-                <a class="on_page_a" href="#sales">Скидки</a>
-                <a class="on_page_a" href="#special">Спец. предложения</a>
-                <a class="on_page_a" href="#popular">Популярно</a>
+            <div class="sub_menu">
+                <p>На сайте</p>
+                <div class="on_page">
+                    <a class="on_page_a" href="./about.html">О нас</a>
+                    <a class="on_page_a" href="./Goods.html">Товары</a>
+                    <a class="on_page_a" href="../index.html">Главная страница</a>
+                    <a class="on_page_a" href="./personalPage.html">Ваша страница</a>
+                </div>
             </div>
-            <div class="logo"><a href="#header"><img class="logo" src="../images/nekros.jpg" alt="coolLogoIdk"></a></div>
+            <div class="logo"><a href="#header"><img class="logo" src="../images/nekros.jpg" alt="coolLogoIdk"></a>
+            </div>
             <div class="clickToregOrLogIn">
-                <a href="./pages/reg.html">Click to log up or log in</a>
+                <a class="a_come_In" href="./reg.html">Click to log up or log in</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="new" class="section_something borbered">
-            <h2 class="second_section_h2">Новинки</h2>
+        <section class="section_something borbered">
+            <h2 class="second_section_h2">Рождение миниатюрного мира</h2>
             <div class="section_something_div">
-                <div class="second_section">
-
+                <div id="blog_1" class="hideBlog">
+                    <div class="section_something_div">
+                        <img class="blog_img" src="../images/nekros.jpg" alt="coolLogoIdk">
+                        <p class="first_section_p">
+                            Миниатюры всегда были важной частью моделирования и творчества. Они позволяют художникам
+                            передать свое видение и креативность в компактном формате. В компании «Plastic Forge» мы
+                            гордимся тем, что создаем уникальные миниатюры, которые вдохновляют моделистов и художников
+                            по всему миру.
+                        </p>
+                    </div>
+                    <div class="section_something_div">
+                        <p class="first_section_p">
+                            Работая над каждой моделью, мы стремимся к совершенству, чтобы каждая деталь была
+                            проработана с любовью и вниманием. Наши мастера используют только высококачественные
+                            материалы и современные технологии, чтобы гарантировать, что каждая миниатюра отвечает самым
+                            строгим требованиям наших клиентов. Мы уделяем внимание не только эстетике, но и
+                            функциональности моделей, чтобы они были удобны в использовании. </p>
+                        <img class="blog_img" src="../images/nekros.jpg" alt="coolLogoIdk">
+                    </div>
+                    <div class="section_something_div">
+                        <img class="blog_img" src="../images/nekros.jpg" alt="coolLogoIdk">
+                        <p class="first_section_p">
+                            За годы нашей работы мы собрали целую армию поклонников, и мы рады видеть, как наши модели
+                            оживают в руках талантливых мастеров. Мы приглашаем вас посетить наш магазин, чтобы увидеть
+                            наши творения и стать частью нашей увлекательной миниатюрной вселенной. Узнайте больше о
+                            процессе создания миниатюр и о том, как они могут повлиять на ваше творчество. </p>
+                    </div>
                 </div>
             </div>
+            <div class="section_something_div">
+                <a class="a_come_In" onclick="showMore(this, 'blog_1')">Читать далее</a>
+                <a class="a_come_In">Оставить комментарий</a>
+                <a class="a_come_In">Оставить реакцию</a>
+            </div>
         </section>
+        <section class="section_something borbered">
+            <h2 class="second_section_h2">Аксессуары для моделей что нужно знать</h2>
+            <div class="section_something_div">
+                <div id="blog_2" class="hideBlog">
+                    <div class="section_something_div">
+                        <img class="blog_img" src="../images/nekros.jpg" alt="coolLogoIdk">
+                        <p class="first_section_p">
+                            Каждый моделист знает: аксессуары могут сделать вашу модель поистине уникальной. В нашем
+                            магазине вы найдете широкий ассортимент товаров — от букетов до военной атрибутики.
+                            Добавление мелких деталей не только делает модель более реалистичной, но и подчеркивает ваше
+                            мастерство. Правильно подобранные аксессуары помогут вам выделить вашу работу среди других и
+                            добавить ей глубины. </p>
+                    </div>
+                    <div class="section_something_div">
+                        <p class="first_section_p">
+                            Мы регулярно обновляем наш каталог, чтобы вы могли находить новые и оригинальные идеи для
+                            своих проектов. В этом посте мы поделимся советами по выбору аксессуаров, основываясь на
+                            последних трендах в моделировании. Обратите внимание на детали: качественные миниатюры
+                            аксессуаров могут оказать огромное влияние на общее впечатление от вашей работы.</p>
+                        <img class="blog_img" src="../images/nekros.jpg" alt="coolLogoIdk">
+                    </div>
+                    <div class="section_something_div">
+                        <img class="blog_img" src="../images/nekros.jpg" alt="coolLogoIdk">
+                        <p class="first_section_p">
+                            Не бойтесь экспериментировать и комбинировать различные элементы. Вам могут понравиться
+                            неожиданные решения и комбинации, о которых вы даже не задумывались. Помните, что
+                            уникальность каждой модели в ваших руках, а аксессуары — это один из лучших способов
+                            выразить свою индивидуальность. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section_something_div">
+                <a class="a_come_In" onclick="showMore(this, 'blog_2')">Читать далее</a>
+                <a class="a_come_In">Оставить комментарий</a>
+                <a class="a_come_In">Оставить реакцию</a>
+            </div>
+        </section>
+        <section class="section_something borbered">
+            <h2 class="second_section_h2">Подборка лучших техник покраски</h2>
+            <div class="section_something_div">
+                <div id="blog_3" class="hideBlog">
+                    <div class="section_something_div">
+                        <img class="blog_img" src="../images/nekros.jpg" alt="coolLogoIdk">
+                        <p class="first_section_p">
+                            Покраска моделей — это искусство, требующее практики и терпения. Не все знают, как достичь
+                            идеальных результатов, но несмотря на это, существует множество техник, которые могут помочь
+                            вам улучшить свои навыки. В этом блоге мы рассмотрим различные методы покраски, включая
+                            акриловые и масляные техники.
+                        </p>
+                    </div>
+                    <div class="section_something_div">
+                        <p class="first_section_p">
+                            Акриловые краски быстро сохнут и легко наносятся, что делает их популярным выбором среди
+                            начинающих моделистов. Они также легко разводятся водой и совместимы с различными средствами
+                            для защиты покрытий. С другой стороны, масляные краски позволяют добиться глубины цвета и
+                            плавных переходов, что особенно ценно для реалистичной покраски.</p>
+                        <img class="blog_img" src="../images/nekros.jpg" alt="coolLogoIdk">
+                    </div>
+                    <div class="section_something_div">
+                        <img class="blog_img" src="../images/nekros.jpg" alt="coolLogoIdk">
+                        <p class="first_section_p">
+                            Каждая методика имеет свои плюсы и минусы. Например, акриловые краски могут требовать больше
+                            слоев для достижения нужного цвета, в то время как масляные требуют больше времени на
+                            высыхание и сложнее в нанесении. В нашем руководящем посте мы расскажем о том, как выбрать
+                            технику, которая подойдет именно вам в зависимости от ваших предпочтений и уровня
+                            подготовки. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section_something_div">
+                <a class="a_come_In" onclick="showMore(this, 'blog_3')">Читать далее</a>
+                <a class="a_come_In">Оставить комментарий</a>
+                <a class="a_come_In">Оставить реакцию</a>
+            </div>
+        </section>
+
     </main>
     <footer>
         <div class="footer_info">

@@ -52,6 +52,8 @@ header {
 
     color: var(--TextToblack_Color);
 }
+
+
 .sub_menu{
     background-color: var(--Button_background_didnt_color);
     padding: 10px;
@@ -90,7 +92,6 @@ header {
     background-color: var(--body_color);
     transform: translateX(-15px);
 }
-
 
 
 .on_page_a {
@@ -144,31 +145,17 @@ header {
 }
 
 .first_section_image {
-    max-width: 20vw;
-    max-height: 20vh;
-    border-radius: 50%;
-    border: 1px solid black;
+    max-width: 40vw;
+    max-height: 40vh;
 }
-
-.first_section_image_a {
-    border-radius: 50%;
-    background-color: #FFF;
-    transition: all .5s ease-in-out;
-}
-
-.first_section_image_a:hover {
-    border-radius: 20%;
-    background-color: #6e6e6e;
-    transition: all .5s ease-in-out;
-}
-
 
 .second_section {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--body_color);
     text-align: justify;
-    flex-wrap: wrap;
     word-wrap: break-word;
     margin: 5px 5vw;
     max-width: 20vw;
@@ -202,20 +189,7 @@ header {
     width: 100%;
     margin: 3px 0px;
 }
-.div_personal_name{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-height: 30vh;
-    max-width: 30vw;
-    margin: 0px 5vw;
-    background-color: var(--body_color);
-}
-.div_personal_name_each{
-    margin: 5px;
-}
+
 .section_something {
     display: flex;
     flex-direction: column;
@@ -226,6 +200,7 @@ header {
 .section_something_div {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     background-color: var(--body_color);
@@ -273,3 +248,7 @@ header {
     max-width: 40vw;
 }
 
+.first_section_image {
+    max-width: 10vw;
+    border: 1px solid black;
+}

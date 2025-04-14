@@ -53,20 +53,46 @@ header {
     color: var(--TextToblack_Color);
 }
 
-.logo {
-    height: 3vh;
-    width: 30vw;
+
+.sub_menu{
+    background-color: var(--Button_background_didnt_color);
+    padding: 10px;
 }
+
+.sub_menu:hover{
+    background-color: var(--agree_color);
+    padding: 10px;
+}
+
+
 
 .on_page {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    max-width: 10vw;
-    max-height: 50px;
-    margin: 5vh 10px;
+
+    position: absolute;
+    z-index: 10;
+    
+    transition: 0.5s ease-in-out;
+
+    visibility: hidden;
+    opacity: 0; 
+    
+    background-color: var(--therd_color);
+    color: var(--TextToblack_Color);
+
+    border: 1px solid black;
 }
+
+.sub_menu:hover  .on_page{
+    visibility: visible;
+    opacity: 1;  
+    background-color: var(--body_color);
+    transform: translateX(-15px);
+}
+
 
 .on_page_a {
     padding: 0px 10px;

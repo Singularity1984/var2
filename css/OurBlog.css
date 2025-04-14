@@ -52,6 +52,7 @@ header {
 
     color: var(--TextToblack_Color);
 }
+
 .sub_menu{
     background-color: var(--Button_background_didnt_color);
     padding: 10px;
@@ -90,8 +91,6 @@ header {
     background-color: var(--body_color);
     transform: translateX(-15px);
 }
-
-
 
 .on_page_a {
     padding: 0px 10px;
@@ -140,6 +139,7 @@ header {
 
 .first_section_p {
     font: 20px Roboto;
+    margin: 10px 0px;
     color: var(--TextToWhite-Color);
 }
 
@@ -227,7 +227,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    word-wrap: break-word;
     background-color: var(--body_color);
 }
 
@@ -238,8 +238,8 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 10px 0px;
-    width: 100%;
+    margin: 10px 10px;
+    padding: 0px 10px;
     height: 30px;
     background-color: var(--Button_background_didnt_color);
     color: var(--TextToWhite-Color);
@@ -273,3 +273,21 @@ header {
     max-width: 40vw;
 }
 
+.showBlog{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body_color);
+    text-align: justify;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    margin: 5px 5vw;
+}
+.hideBlog{
+    display: none;
+}
+.blog_img{
+    margin: 10px;
+    border: 5px solid var(--second_Color);
+    max-width: 10vw;
+    max-height: 10vh;
+}
