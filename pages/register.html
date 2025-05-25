@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - Plastic Forge</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header_inner">
+                <a href="../index.html" class="logo">
+                    <img src="../assets/image/logo.svg" alt="Plastic Forge">
+                </a>
+                <nav class="nav">
+                    <ul class="nav_list">
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="products.html">Товары</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                    </ul>
+                </nav>
+                <div class="user-actions">
+                    <a href="login.html" class="btn btn-outline">Войти</a>
+                    <a href="registr.html" class="btn btn--primary">Регистрация</a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="auth">
+            <div class="container">
+                <div class="auth_wrapper">
+                    <div class="auth_form">
+                        <h1>Создать аккаунт</h1>
+                        <form id="registerForm">
+                            <div class="form-group">
+                                <label for="username">Имя пользователя</label>
+                                <input type="text" id="username" required>
+                                <div class="hint">От 3 до 20 символов</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password">Пароль</label>
+                                <input type="password" id="password" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="confirm-password">Подтвердите пароль</label>
+                                <input type="password" id="confirm-password" required>
+                                <div class="error-message" id="password-error"></div>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="agree-terms" required>
+                                <label for="agree-terms">Я согласен с <a href="#">правилами платформы</a> и <a href="#">политикой конфиденциальности</a></label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary btn--block">Зарегистрироваться</button>
+                        </form>
+                        
+                        <div class="auth_links">
+                            <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+                            <a href="#">Забыли пароль?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer_inner">
+                <div class="footer_col">
+                    <h3>Plastic Forge</h3>
+                    <p>Магазин материалов для художников и моделистов</p>
+                </div>
+                <div class="footer_col">
+                    <h3>Контакты</h3>
+                    <address>
+                        <p>г. Москва, ул. Творческая, 15</p>
+                        <p>+7 (999) 123-45-67</p>
+                        <p>info@plastic-forge.ru</p>
+                    </address>
+                </div>
+                <div class="footer_col">
+                    <h3>Соцсети</h3>
+                    <div class="social-links">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>&copy; 2023 Plastic Forge. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход - Plastic Forge</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header_inner">
+                <a href="../index.html" class="logo">
+                    <img src="../assets/image/logo.svg" alt="Plastic Forge">
+                </a>
+                <nav class="nav">
+                    <ul class="nav_list">
+                        <li><a href="../index.html" class="active">Главная</a></li>
+                        <li><a href="products.html">Товары</a></li>
+                        <li><a href="blog.html">Блог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                    </ul>
+                </nav>
+                <div class="user-actions">
+                    <a href="login.html" class="btn btn-outline">Войти</a>
+                    <a href="register.html" class="btn btn--primary">Регистрация</a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="auth">
+            <div class="container">
+                <div class="auth_form">
+                    <h1>Вход в аккаунт</h1>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="login">Логин или Email</label>
+                            <input type="text" id="login" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Пароль</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--block">Войти</button>
+                    </form>
+                    <div class="auth_links">
+                        <a href="register.html">Еще нет аккаунта? Зарегистрируйтесь</a>
+                        <a href="#">Забыли пароль?</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer_inner">
+                <div class="footer_col">
+                    <h3>Plastic Forge</h3>
+                    <p>Магазин материалов для художников и моделистов</p>
+                </div>
+                <div class="footer_col">
+                    <h3>Контакты</h3>
+                    <address>
+                        <p>г. Москва, ул. Творческая, 15</p>
+                        <p>+7 (999) 123-45-67</p>
+                        <p>info@plastic-forge.ru</p>
+                    </address>
+                </div>
+                <div class="footer_col">
+                    <h3>Соцсети</h3>
+                    <div class="social-links">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>&copy; 2023 Plastic Forge. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
