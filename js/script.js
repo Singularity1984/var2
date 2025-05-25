@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
             featuredGrid.innerHTML = featuredProducts.map(product => `
                 <div class="product-card">
                     <div class="product-card_image">
-                        <img src="${product.image}" alt="${product.title}">
+                        <img src="${product.image.replace(".", " ")}" alt="${product.title}">
                     </div>
                     <div class="product-card_content">
                         <h3 class="product-card_title">${product.title}</h3>
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
             newArrivalsGrid.innerHTML = newProducts.map(product => `
                 <div class="product-card">
                     <div class="product-card_image">
-                        <img src="${product.image}" alt="${product.title}">
+                        <img src="${product.image.replace(".", " ")}" alt="${product.title}">
                     </div>
                     <div class="product-card_content">
                         <h3 class="product-card_title">${product.title}</h3>
