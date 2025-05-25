@@ -234,3 +234,27 @@ function createCommetn(id) {
     `;
     id.innerHTML+=commentHTML;
 }
+
+        // Смена аватара
+document.getElementById('change-avatar').addEventListener('click', function() {
+     document.getElementById('avatar-input').click();
+});
+
+document.getElementById('avatar-input').addEventListener('change', function(e) {
+    if (e.target.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function(event) {
+            document.getElementById('avatar').src = event.target.result;
+        };
+        reader.readAsDataURL(e.target.files[0]);
+    }
+});
+
+        // Изменение никнейма
+document.getElementById('edit-username').addEventListener('click', function(e) {
+    e.preventDefault();
+    const newName = prompt('Введите новый никнейм:', document.getElementById('username').textContent);
+    if (newName) {
+        document.getElementById('username').textContent = newName;
+    }
+});

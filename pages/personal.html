@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Товары - Plastic Forge</title>
+    <title>Личный кабинет - Plastic Forge</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -34,33 +34,52 @@
             </div>
         </div>
     </header>
-
     <main>
-        <section class="products">
-            <div class="container">
-                <div class="products_header">
-                    <h1 class="section-title">Каталог товаров</h1>
-                </div>
 
-                <div class="filter-sidebar">
-                    <h3>Категории</h3>
-                    <ul class="filter-list">
-                        <li><label><input type="checkbox" checked> Все товары</label></li>
-                        <li><label><input type="checkbox"> Краски</label></li>
-                        <li><label><input type="checkbox"> Грунты</label></li>
-                        <li><label><input type="checkbox"> Текстурные пасты</label></li>
-                        <li><label><input type="checkbox"> Инструменты</label></li>
-                        <li><label><input type="checkbox"> Аксессуары</label></li>
-                    </ul>
-                </div>
 
-                <div class="products-grid">
-                    <!-- Товары будут добавлены через JS -->
+        <div class="avatar-block">
+            <img src="default-avatar.jpg" alt="Аватар" class="avatar" id="avatar">
+            <a class="change-avatar" id="change-avatar">Сменить аватар</a>
+            <input type="file" id="avatar-input" style="display:none;">
+        </div>
+
+        <div class="user-div">
+            <div class="user-info">
+                <div class="nickname">
+                    <span id="username">User123</span>
+                    <a href="#" id="edit-username">[изменить]</a>
                 </div>
+                <div class="points">Бонусные баллы: <span id="points">1250</span></div>
             </div>
-        </section>
-    </main>
+        </div>
+        <div class="contacts">
+            <h3>Контактные данные</h3>
+            <form class="contacts-form">
+                <input type="text" placeholder="ФИО" value="Иванов Иван">
+                <input type="email" placeholder="Email" value="ivan@example.com">
+                <input type="tel" placeholder="Телефон" value="+79001234567">
+                <textarea placeholder="Адрес">г. Москва, ул. Примерная, 1</textarea>
+                <button type="button" class="save-btn">Сохранить</button>
+            </form>
+        </div>
+        <div class="orders">
+            <h3>Мои заказы</h3>
 
+            <h4>Активные</h4>
+            <div class="order order-active">
+                <p><strong>Заказ #12345</strong> (в обработке)</p>
+                <p>Краски акриловые (2 шт.)</p>
+                <p>Сумма: 1 500 руб.</p>
+            </div>
+
+            <h4>Завершенные</h4>
+            <div class="order order-completed">
+                <p><strong>Заказ #12001</strong> (доставлен)</p>
+                <p>Кисти модельные (3 шт.)</p>
+                <p>Сумма: 900 руб.</p>
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="container">
             <div class="footer_inner">

@@ -1,21 +1,18 @@
 :root {
-    /* Цветовая палитра */
-    --primary-color: #0c00b0;       /* Основной синий цвет */
-    --primary-dark: #090080;        /* Темный вариант синего */
-    --primary-light: #3a30e0;       /* Светлый вариант синего */
-    --black: #000000;               /* Черный */
-    --white: #ffffff;               /* Белый */
-    --gray-dark: #333333;           /* Темно-серый */
-    --gray: #666666;                /* Серый */
-    --gray-light: #eeeeee;          /* Светло-серый */
+    --primary-color: #0c00b0;
+    --primary-dark: #090080;
+    --primary-light: #3a30e0;
+    --black: #000000;
+    --white: #ffffff;
+    --gray-dark: #333333;
+    --gray: #666666;
+    --gray-light: #eeeeee;
 
-    /* Размеры */
     --header-height: 80px;
     --border-radius: 8px;
     --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Базовые стили */
 * {
     margin: 0;
     padding: 0;
@@ -48,7 +45,7 @@ ul {
     list-style: none;
 }
 
-main{
+main {
     margin-top: 20vh;
 }
 
@@ -60,7 +57,6 @@ main{
     justify-content: space-evenly;
 }
 
-/* Кнопки */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -103,7 +99,6 @@ main{
     width: 100%;
 }
 
-/* Шапка */
 header {
     position: fixed;
     top: 0;
@@ -125,12 +120,12 @@ header {
 }
 
 .logo {
-    display:  flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.logo img{
+.logo img {
 
     height: 50px;
     width: 50px;
@@ -138,13 +133,16 @@ header {
 
 .nav_list {
     display: flex;
-    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 10px;
 }
 
 .nav_list a {
     font-weight: 500;
     position: relative;
     padding: 5px 0;
+    margin: 0 10px;
 }
 
 .nav_list a::after {
@@ -175,7 +173,6 @@ header {
     padding: 10px;
 }
 
-/* Основные секции */
 .section-title {
     font-size: 2.5rem;
     margin-bottom: 40px;
@@ -202,7 +199,6 @@ header {
     margin-bottom: 30px;
 }
 
-/* Карточки товаров */
 .products-grid {
     display: flex;
     flex-direction: row;
@@ -276,7 +272,7 @@ header {
     justify-content: space-between;
 }
 
-.about_text{
+.about_text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,60 +280,149 @@ header {
     width: 80vw;
 }
 
-.contacts{
+.contacts {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.contacts_grid{
+
+.contacts_grid {
     display: flex;
     flex-direction: row;
     margin: 10px;
 }
-.contact-card{
+
+.contact-card {
     margin: 0 5vw;
 }
 
-.blog-post{
+.avatar-block {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    border: 2px solid var(--primary-color);
+}
+
+.change-avatar {
+    display: block;
+    margin-top: 10px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.user-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.user-info {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.nickname {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.points {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.orders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.order {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.order-active {
+    border-left: 10px solid orange;
+}
+
+.order-completed {
+    border-left: 10px solid green;
+}
+
+.contacts-form input,
+.contacts-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.save-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.blog-post {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.blog-post_hide{
+
+.blog-post_hide {
     display: none;
 }
-.blog-post_text{
+
+.blog-post_text {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80vw;
 }
 
-.blog-post_actions{
+.blog-post_actions {
     display: flex;
     flex-direction: row;
     margin: 10px;
 }
-.blog-post_textarea{
+
+.blog-post_textarea {
     max-height: 70px;
     max-width: 200px;
 }
-.blog-post_actions a{
+
+.blog-post_actions a {
     margin: 10px;
 }
 
-.blog-post p{
+.blog-post p {
     font: 20px Roboto;
     margin: 10px 0px;
     color: var(--black);
 }
 
-.blog-post_image{
+.blog-post_image {
     width: 200px;
     height: 150px;
 }
 
-/* Подвал */
 footer {
     background-color: var(--black);
     color: var(--white);
@@ -346,7 +431,7 @@ footer {
     margin-top: 60px;
 }
 
-.footer_inner {    
+.footer_inner {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -354,7 +439,8 @@ footer {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.footer_col{
+
+.footer_col {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -362,6 +448,7 @@ footer {
     word-break: break-word;
     max-width: 20vw;
 }
+
 .footer_col h3 {
     font-size: 1.3rem;
     margin-bottom: 20px;
@@ -393,14 +480,14 @@ footer {
     background-color: var(--primary-color);
 }
 
-/* Адаптивность */
-@media (max-width: 992px) {
-    .nav_list {
-        gap: 20px;
-    }
-}
 
 @media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .nav {
         position: fixed;
         top: var(--header-height);
@@ -448,43 +535,53 @@ footer {
     .user-actions {
         display: none;
     }
-    .contacts_grid{
+
+    .contacts_grid {
         flex-direction: column;
     }
-    .footer_inner{
+
+    .footer_inner {
         flex-direction: column;
     }
-    .footer_col{
+
+    .footer_col {
         max-width: 80vw;
     }
+
     .container {
-    align-items: center;
-    justify-content: center;
+        align-items: center;
+        justify-content: center;
     }
-    main{
+
+    main {
         padding: 0px;
     }
-    .about_text{
+
+    .about_text {
         padding: 10px;
     }
-    .blog-post_content{
+
+    .blog-post_content {
         display: flex;
         flex-direction: column;
         max-width: 80vw;
     }
-    .blog-post_actions{
+
+    .blog-post_actions {
         display: flex;
         flex-direction: column;
     }
-    .blog-post_actions textarea{
+
+    .blog-post_actions textarea {
         margin: 10px;
     }
 }
 
 @media (max-width: 576px) {
-    .product-card{
+    .product-card {
         width: 80vw;
     }
+
     .hero {
         padding: 120px 0 80px;
     }
