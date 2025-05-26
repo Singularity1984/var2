@@ -201,26 +201,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Инициализация
     displayFeaturedProducts();
     displayAllProducts();
     setupFilters();
 
-    // Обработка формы входа
     const loginForm = document.getElementById('loginForm');
-    if (loginForm) {
         loginForm.addEventListener('submit', function(e) {
             alert('Вход выполнен успешно!');
         });
-    }
+    
 
-    // Обработка формы регистрации
     const registerForm = document.getElementById('registerForm');
-    if (registerForm) {
         registerForm.addEventListener('submit', function(e) {
             alert('Регистрация прошла успешно!');
         });
-    }
 });
 
 function showMore(button, id) {
