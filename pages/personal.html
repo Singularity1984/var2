@@ -23,7 +23,7 @@
                         <li><a href="about.html">О нас</a></li>
                         <li><a href="personal.html">Профиль</a></li>
                         <li><a href="login.html" class="btn btn-outline">Войти</a></li>
-                        <li><a href="register.html" class="btn btn--primary">Регистрация</a></li>
+                        <li><a href="register.html" class="btn btn-primary">Регистрация</a></li>
                     </ul>
                 </nav>
                 <button class="mobile-menu-btn">
@@ -38,16 +38,15 @@
 
 
         <div class="avatar-block">
-            <img src="default-avatar.jpg" alt="Аватар" class="avatar" id="avatar">
+            <img src="../assets/image/logo.svg" alt="Аватар" class="avatar" id="avatar">
             <a class="change-avatar" id="change-avatar">Сменить аватар</a>
-            <input type="file" id="avatar-input" style="display:none;">
         </div>
 
         <div class="user-div">
             <div class="user-info">
                 <div class="nickname">
-                    <span id="username">User123</span>
-                    <a href="#" id="edit-username">[изменить]</a>
+                    <span id="username">Вася белый</span>
+                    <a class="change-avatar" id="edit-username" onclick="changeName()">[изменить]</a>
                 </div>
                 <div class="points">Бонусные баллы: <span id="points">1250</span></div>
             </div>
@@ -57,9 +56,9 @@
             <form class="contacts-form">
                 <input type="text" placeholder="ФИО" value="Иванов Иван">
                 <input type="email" placeholder="Email" value="ivan@example.com">
-                <input type="tel" placeholder="Телефон" value="+79001234567">
-                <textarea placeholder="Адрес">г. Москва, ул. Примерная, 1</textarea>
-                <button type="button" class="save-btn">Сохранить</button>
+                <input type="tel" placeholder="Телефон" value="+88005553535">
+                <input type="adress" placeholder="Адрес" value="г. Москва, ул. Красивая, 1"></input>
+                <button class="save-btn">Сохранить</button>
             </form>
         </div>
         <div class="orders">
